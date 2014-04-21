@@ -1,0 +1,3 @@
+src/* usr/share/pilas-tutoriales/src
+bin/pilas-tutoriales usr/bin/
+debian/pilas-tutoriales.desktop usr/share/applications
