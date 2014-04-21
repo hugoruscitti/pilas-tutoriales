@@ -1,0 +1,13 @@
+{
+  "name": "pilas-tutoriales",
+  "main": "index.html",
+  "version": "0.1",
+  "window": {
+    "toolbar": false,
+    "position": "center",
+    "min_width": 850,
+    "min_height": 550,
+    "width": 850,
+    "height": 550
+  }
+}
