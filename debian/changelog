@@ -1,3 +1,27 @@
+pilas-tutoriales (0.5) unstable; urgency=low
+
+  * Reparando el icono del menu y actualizando dependencias. 
+
+ -- Hugo Ruscitti <hugoruscitti@gmail.com>  Mon, 02 Feb 2015 14:20:39 +0100
+
+pilas-tutoriales (0.4) unstable; urgency=low
+
+  * Haciendo que el paquete funcione en toda arquitectura. 
+
+ -- Hugo Ruscitti <hugoruscitti@gmail.com>  Thu, 17 Jul 2014 20:28:43 +0200
+
+pilas-tutoriales (0.3) unstable; urgency=low
+
+  * Actualizando tutoriales. 
+
+ -- Hugo Ruscitti <hugoruscitti@gmail.com>  Thu, 29 May 2014 17:44:30 +0200
+
+pilas-tutoriales (0.2) unstable; urgency=low
+
+  * Reparando el icono del menú.
+
+ -- Hugo Ruscitti <hugoruscitti@gmail.com>  Mon, 21 Apr 2014 21:45:20 +0200
+
 pilas-tutoriales (0.1) unstable; urgency=low
 
   * Versión inicial.
