@@ -73,6 +73,7 @@ app.controller('Paso2Ctrl', ['$scope', '$location', function($scope, $location) 
   
   $scope.comenzar_tutorial = function() {
   	$location.path('/3');
+
     $scope.$parent.ejercicios[1]['completado'] = true;
       
   }
@@ -93,6 +94,8 @@ app.controller('Paso3Ctrl', ['$scope', '$location', function($scope, $location) 
     {completa: false, texto: "Escribí zack.saludar() para que nos diga algo."},
   ];
     
+
+  var _scope = $scope;
   
   $scope.$parent.cuando_ejecuta = function(data) {
       console.log(data);
@@ -104,7 +107,7 @@ app.controller('Paso3Ctrl', ['$scope', '$location', function($scope, $location) 
                              
     if (numero==1 && data == "caminando 2 pasos") {
       $location.path('/4');
-      $scope.$parent.ejercicios[2]['completado'] = true;
+      _scope.$parent.ejercicios[2]['completado'] = true;
     }
   }
   
@@ -121,6 +124,7 @@ app.controller('Paso4Ctrl', ['$scope', '$location', function($scope, $location) 
 
     var _scope = $scope;
     var _location = $location;
+
 
     window.setTimeout(function() {
       console.log("head");
@@ -146,6 +150,8 @@ app.controller('Paso5Ctrl', ['$scope', '$location', function($scope, $location) 
     {completa: false, texto: "Escribí zack.inspeccionar()"},
   ];
 
+  var _scope = $scope;
+
   $scope.$parent.cuando_ejecuta = function(dato) {
 
     if (/del actor/.test(dato)) {
@@ -154,7 +160,7 @@ app.controller('Paso5Ctrl', ['$scope', '$location', function($scope, $location) 
 
     if (dato == "Habilitando el teclado" || dato == "El teclado ya estaba habilitado.") {
       $scope.consignas[1].completa = true;
-      $scope.$parent.ejercicios[4]['completado'] = true;
+      _scope.$parent.ejercicios[4]['completado'] = true;
       $scope.$apply();
       $location.path('/6');
     }
