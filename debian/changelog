@@ -1,3 +1,9 @@
+pilas-tutoriales (0.6) unstable; urgency=low
+
+  * Fix en la perdida del scope.
+
+ -- Mauro <mauro@sdf.org>  Fri, 06 Mar 2015 12:07:29 -0300
+
 pilas-tutoriales (0.5) unstable; urgency=low
 
   * Reparando el icono del menu y actualizando dependencias. 
