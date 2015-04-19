@@ -1597,10 +1597,18 @@ var Normal = (function (_super) {
     }
     Normal.prototype.actualizar = function () {
         this.fisica.actualizar();
+        var actor = undefined;
 
         for (var i = 0; i < this.actores.length; i++) {
-            this.actores[i].actualizar();
-            this.actores[i].actualizar_comportamientos();
+            actor = this.actores[i];
+
+            if (actor === undefined) {
+              console.log("Actor undefined!");
+            } else {
+              actor.actualizar();
+              actor.actualizar_comportamientos();
+            }
+
         }
 
         this.ordenar_actores_por_valor_z();
@@ -1619,7 +1627,7 @@ var Normal = (function (_super) {
 
             return 0;
         };
-        this.stage.sortChildren(sortFunction);
+        //this.stage.sortChildren(sortFunction);
     };
 
     Normal.prototype.agregar_actor = function (actor) {
