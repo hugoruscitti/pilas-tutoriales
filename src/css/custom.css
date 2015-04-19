@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	font-family: 'Droid Sans';
 }
 
-p { 
+p {
 	font-size: 16px;
 	line-height: 1.8;
 }
@@ -209,4 +209,8 @@ div.tutorial {
 
 .btn-sm {
     font-size: 13px !important;
+}
+
+.version {
+  font-size: small;
 }

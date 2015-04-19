@@ -1,7 +1,7 @@
 {
   "name": "pilas-tutoriales",
   "main": "index.html",
-  "version": "0.1",
+  "version": "0.0.7",
   "window": {
     "toolbar": false,
     "position": "center",
