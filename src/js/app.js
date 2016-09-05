@@ -1,3 +1,6 @@
+/* HACK para setear WM_CLASS */
+require('nwjs-hack').set_wmclass("pilas-tutoriales", true);
+
 app = angular.module('app', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 
 app.config(['$routeProvider', function($routeProvider) {

@@ -1,7 +1,7 @@
 {
   "name": "pilas-tutoriales",
   "main": "index.html",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "window": {
     "toolbar": false,
     "position": "center",
@@ -9,5 +9,8 @@
     "min_height": 550,
     "width": 850,
     "height": 550
+  },
+  "dependencies": {
+    "nwjs-hack": "iglosiggio/nwjs-hack"
   }
 }

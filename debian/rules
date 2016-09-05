@@ -20,6 +20,9 @@ export DH_OPTIONS
 %:
 	dh $@ 
 
+override_dh_auto_build:
+	cd src && npm install
+
 override_dh_shlibdeps:
 	@echo "..."
 

@@ -1,2 +1,2 @@
 #!/bin/bash
-nw /usr/share/pilas-tutoriales/src "$@"
+exec nw /usr/share/pilas-tutoriales/src "$@"
