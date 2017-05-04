@@ -12,6 +12,7 @@ comandos:
 	@echo ""
 	@echo "  ${Y}Para desarrolladores${N}"
 	@echo ""
+	@echo "    ${G}iniciar${N}  	   Instala las dependencias."
 	@echo "    ${G}ejecutar_linux${N}  Prueba la aplicacion sobre Huayra."
 	@echo "    ${G}ejecutar_mac${N}    Prueba la aplicacion sobre OSX."
 	@echo ""
@@ -20,7 +21,11 @@ comandos:
 	@echo "    ${G}version${N}         Genera una nueva versión."
 	@echo "    ${G}subir_version${N}   Sube version generada al servidor."
 	@echo "    ${G}publicar${N}        Publica el cambio para el paquete deb."
+	@echo "    ${G}binarios${N}        Genera las versiones binarias de la aplicación."
 	@echo ""
+
+iniciar:
+	git submodule update --init
 
 ejecutar_linux:
 	nw src
@@ -45,3 +50,6 @@ subir_version:
 	git push
 	git push --all
 	git push --tags
+
+binarios:
+	nwjs-shell-builder/nwjs-build.sh --src=src --build --nw=0.12.3 --target="2"
