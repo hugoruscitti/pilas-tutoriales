@@ -28,10 +28,10 @@ iniciar:
 	npm install
 
 ejecutar_linux:
-	nw src
+	electron .
 
 ejecutar_mac:
-	/Applications/nwjs.app/Contents/MacOS/nwjs src
+	electron .
 
 test_mac: ejecutar_mac
 
