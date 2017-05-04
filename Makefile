@@ -25,7 +25,7 @@ comandos:
 	@echo ""
 
 iniciar:
-	git submodule update --init
+	npm install
 
 ejecutar_linux:
 	nw src
@@ -52,4 +52,8 @@ subir_version:
 	git push --tags
 
 binarios:
-	nwjs-shell-builder/nwjs-build.sh --src=src --build --nw=0.12.3 --target="2"
+	@node_modules/.bin/electron-packager dist pilas-tutoriales --app-version=0.1 --platform=win32 --arch=ia32 --electron-version=0.37.6 --ignore=node_modules --out=binarios
+	@zip -qr binarios/${NOMBRE}-${VERSION}-win32.zip binarios/pilas-tutoriales-win32-ia32/
+
+.PHONY: binarios
+

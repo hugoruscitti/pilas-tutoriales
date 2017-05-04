@@ -1,0 +1,23 @@
+{
+  "name": "pilas-tutoriales",
+  "version": "1.0.0",
+  "description": "pilas-tutoriales ================",
+  "main": "electron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoruscitti/pilas-tutoriales.git"
+  },
+  "main": "electron.js",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoruscitti/pilas-tutoriales/issues"
+  },
+  "homepage": "https://github.com/hugoruscitti/pilas-tutoriales#readme",
+  "dependencies": {
+    "electron-packager": "^8.7.0"
+  }
+}
