@@ -1,6 +1,6 @@
 {
   "name": "pilas-tutoriales",
-  "version": "1.0.0",
+  "version": "0.0.8",
   "description": "pilas-tutoriales ================",
   "main": "electron.js",
   "scripts": {

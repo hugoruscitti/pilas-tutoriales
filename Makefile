@@ -39,7 +39,7 @@ publicar:
 	dch -i
 
 version:
-	@bumpversion patch --current-version ${VERSION} src/package.json src/partials/tutoriales.html Makefile --list
+	@bumpversion patch --current-version ${VERSION} src/package.json package.json src/partials/tutoriales.html Makefile --list
 	@echo "Es recomendable escribir el comando que genera los tags y sube todo a github:"
 	@echo ""
 	@echo "make ver_sync"
