@@ -40,9 +40,9 @@ publicar:
 
 version:
 	@bumpversion patch --current-version ${VERSION} src/package.json package.json src/partials/tutoriales.html Makefile --list
-	@echo "Es recomendable escribir el comando que genera los tags y sube todo a github:"
+	@echo "Ahora, es importante chequear los cambios y escribir el comando que sube todo a github:"
 	@echo ""
-	@echo "make ver_sync"
+	@echo "make subir_version"
 
 subir_version:
 	git commit -am 'release ${VERSION}'
