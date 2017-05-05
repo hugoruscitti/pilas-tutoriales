@@ -52,8 +52,13 @@ subir_version:
 	git push --tags
 
 binarios:
-	@node_modules/.bin/electron-packager dist pilas-tutoriales --app-version=0.1 --platform=win32 --arch=ia32 --electron-version=0.37.6 --ignore=node_modules --out=binarios
+	mkdir -p binarios
+	@node_modules/.bin/electron-packager . pilas-tutoriales --app-version=0.1 --platform=win32 --arch=ia32 --electron-version=1.4.3 --ignore=node_modules --out=binarios
 	@zip -qr binarios/${NOMBRE}-${VERSION}-win32.zip binarios/pilas-tutoriales-win32-ia32/
+	@echo "Creando el archivo binarios/${NOMBRE}-${VERSION}-win32.zip"
+	@node_modules/.bin/electron-packager . pilas-tutoriales --app-version=0.1 --platform=darwin --electron-version=1.4.3 --ignore=node_modules --out=binarios
+	@zip -qr binarios/${NOMBRE}-${VERSION}-osx.zip binarios/pilas-tutoriales-darwin-x64/
+
 
 .PHONY: binarios
 
